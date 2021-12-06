@@ -1,2 +1,2 @@
-# hotkeys
-AutoHotkey custom key bindings
+# Hotkeys
+AutoHotkey custom key bindings for typing repetitive commands
