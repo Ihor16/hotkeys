@@ -38,6 +38,10 @@ return
 Send, assert
 return
 
+!g::
+Send, git` `
+return
+
 !+-::
 Send, —
 return
