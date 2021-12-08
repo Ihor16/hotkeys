@@ -2,8 +2,18 @@
 ;^ - Ctrl
 ;+ - Shift
 
+SetKeyDelay, 0
+
 !d::
 Send, docker` `
+return
+
+!o::
+Send, docker-compose` `
+return
+
+!p::
+Send, ps` `
 return
 
 !c::
