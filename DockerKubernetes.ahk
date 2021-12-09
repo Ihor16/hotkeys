@@ -2,7 +2,8 @@
 ;^ - Ctrl
 ;+ - Shift
 
-;SetKeyDelay, 0
+#NoEnv  
+SendMode Input
 
 !d::
 Send, docker` `
