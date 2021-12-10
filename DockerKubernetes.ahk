@@ -29,6 +29,10 @@ return
 Send, image` `
 return
 
+!e::
+Send, service` `
+return
+
 !r::
 Send, deployment
 return
