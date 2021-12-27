@@ -13,6 +13,14 @@ return
 Send, docker-compose` `
 return
 
+!a::
+Send, stack` `
+return
+
+!t::
+Send, secret` `
+return
+
 !c::
 Send, container` `
 return
@@ -29,8 +37,9 @@ return
 Send, image` `
 return
 
-!e::
+!s::
 Send, service` `
+
 return
 
 !r::

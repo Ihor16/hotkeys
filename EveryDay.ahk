@@ -34,7 +34,7 @@ return
 ;SendRaw ` `-> `
 ;return
 
-!s::
+!e::
 Send, assert
 return
 
