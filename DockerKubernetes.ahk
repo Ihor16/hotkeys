@@ -10,7 +10,11 @@ Send, docker` `
 return
 
 !p::
-Send, docker-compose` `
+Send, docker compose` `
+return
+
+!-::
+Send, --profile` `
 return
 
 !a::

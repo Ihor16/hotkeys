@@ -11,32 +11,18 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 Run, https://www.tablesgenerator.com/text_tables
 return
 
-!,::
-Send, %A_Space%<-%A_Space%
-return
-
 ^,::
 Send, %A_Space%<-%A_Space%
 return
 
-!.::
-Send, {End}
-SendRaw ` `%`>`% `r
-return
-
 ^.::
 Send, {End}
-SendRaw ` `%`>`% `r
-return
-
-!=::
-Send, {End} 
-SendRaw ` +`r
+SendRaw ` `%`>`% `
 return
 
 ^+p::
 Send, {End} 
-SendRaw ` +`r
+SendRaw ` +`
 return
 
 !+w::

@@ -12,11 +12,7 @@ Run wt
 return
 
 !Space::
-Send, {End}`
-return
-
-^Space::
-Send, {Home}
+Send, {End} `
 return
 
 !9::
@@ -38,7 +34,7 @@ return
 ;SendRaw ` `-> `
 ;return
 
-^!e::
+!e::
 Send, assert
 return
 
