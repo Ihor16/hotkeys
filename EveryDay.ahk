@@ -76,7 +76,7 @@ Send, ↓
 return
 
 ^PrintScreen::
-Run, D:\Intstall\Bandicam_4.6.4\Bandicam_Portable.exe
+Run, D:\Install\Bandicam_4.6.4\Bandicam_Portable.exe
 
 !;::
 Send, {End}
