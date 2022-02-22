@@ -15,9 +15,9 @@ return
 Send, {End}`
 return
 
-^Space::
-Send, {Home}
-return
+;^Space::
+;Send, {Home}
+;return
 
 !9::
 Send, ()
