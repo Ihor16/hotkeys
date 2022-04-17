@@ -7,10 +7,6 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;^ - Ctrl
 ;+ - Shift
 
-+^!t::
-Run, https://www.tablesgenerator.com/text_tables
-return
-
 !,::
 Send, %A_Space%<-%A_Space%
 return

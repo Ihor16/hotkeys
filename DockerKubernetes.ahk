@@ -9,6 +9,10 @@ SendMode Input
 Send, docker` `
 return
 
+!e::
+Send, exec -it` `
+return
+
 !p::
 Send, docker compose` `
 return

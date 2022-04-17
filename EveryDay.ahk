@@ -7,6 +7,21 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;^ - Ctrl
 ;+ - Shift
 
+Hotkey !:, AltColonPressed
+Return
+
++^!d::
+Run, D:\Setup\Hotkeys\DockerKubernetes.ahk
+return
+
++^!t::
+Run, https://www.tablesgenerator.com/text_tables
+return
+
++^!g::
+Run, msedge.exe https://pkg.go.dev/std
+return
+
 <#t::
 Run wt
 return
@@ -24,13 +39,33 @@ Send, ()
 Send, {Left 1}
 return
 
+AltColonPressed:
+Send, ()
+Send, {Left 1}
+Return
+
 !]::
 Send, []
 Send, {Left 1}
 return
 
+!+]::
+SendRaw {}
+Send, {Left 1}
+return
+
+!+[::
+SendRaw {}
+Send, {Left 1}
+return
+
 !'::
 Send, ""
+Send, {Left 1}
+return
+
+!+'::
+Send, ''
 Send, {Left 1}
 return
 
