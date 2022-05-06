@@ -10,7 +10,12 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 Hotkey !:, AltColonPressed
 Return
 
-+^!d::
+;~Alt::
+;    If (A_ThisHotkey = A_PriorHotkey and A_TimeSincePriorHotkey < 200)
+;        Send #f
+;return
+
++^!d::F
 Run, D:\Setup\Hotkeys\DockerKubernetes.ahk
 return
 
@@ -20,6 +25,10 @@ return
 
 +^!g::
 Run, msedge.exe https://pkg.go.dev/std
+return
+
++^!m::
+Run, msedge.exe https://www.mongodb.com/docs/manual/reference/operator/query/
 return
 
 <#t::

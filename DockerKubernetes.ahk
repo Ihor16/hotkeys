@@ -22,19 +22,19 @@ Send, --profile` `
 return
 
 !a::
-Send, stack` `
+Send, docker stack` `
 return
 
 !t::
-Send, secret` `
+Send, docker secret` `
 return
 
 !c::
-Send, container` `
+Send, docker container` `
 return
 
 !v::
-Send, volume` `
+Send, docker volume` `
 return
 
 !n::
@@ -42,11 +42,11 @@ Send, network` `
 return
 
 !i::
-Send, image` `
+Send, docker image` `
 return
 
 !s::
-Send, service` `
+Send, docker service` `
 
 return
 
