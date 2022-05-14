@@ -15,6 +15,14 @@ Return
 ;        Send #f
 ;return
 
++#l::
+Send, +#{Right}
+return
+
++#h::
+Send, +#{Left}
+return
+
 +^!d::F
 Run, D:\Setup\Hotkeys\DockerKubernetes.ahk
 return
@@ -133,5 +141,17 @@ SendRaw ` {
 return
 
 Capslock::
+Send, {Esc}
+return
+
++Capslock::
+Send, {Esc}
+return
+
+^Capslock::
+Send, {Esc}
+return
+
+!Capslock::
 Send, {Esc}
 return
