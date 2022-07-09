@@ -23,6 +23,22 @@ return
 Send, +#{Left}
 return
 
+!m::
+Send, #{Up}
+return
+
+!z::
+Send, #{Down}
+return
+
+!l::
+Send, #{Right}
+return
+
+!h::
+Send, #{Left}
+return
+
 +^!d::F
 Run, D:\Setup\Hotkeys\DockerKubernetes.ahk
 return

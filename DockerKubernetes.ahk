@@ -17,6 +17,10 @@ return
 Send, docker compose` `
 return
 
+!u::
+Send, up -d` `
+return
+
 !-::
 Send, --profile` `
 return
@@ -52,10 +56,6 @@ return
 
 !r::
 Send, deployment
-return
-
-!m::
-Send, minikube` `
 return
 
 !k::
