@@ -61,3 +61,7 @@ return
 !k::
 Send, kubectl` `
 return
+
+!h::
+Send, helm` `
+return

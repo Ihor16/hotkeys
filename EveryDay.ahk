@@ -31,14 +31,6 @@ return
 Send, #{Down}
 return
 
-!l::
-Send, #{Right}
-return
-
-!h::
-Send, #{Left}
-return
-
 +^!d::F
 Run, D:\Setup\Hotkeys\DockerKubernetes.ahk
 return
@@ -113,6 +105,11 @@ return
 !g::
 Send, git commit -m ""
 Send, {Left 1}
+return
+
+!+f::
+Send, grep -H  *
+Send, {Left 2}
 return
 
 !+-::
