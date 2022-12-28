@@ -10,10 +10,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 Hotkey !:, AltColonPressed
 Return
 
-;~Alt::
-;    If (A_ThisHotkey = A_PriorHotkey and A_TimeSincePriorHotkey < 200)
-;        Send #f
-;return
+RAlt::Ctrl
+#IfWinActive
+return
 
 +#l::
 Send, +#{Right}
@@ -23,20 +22,20 @@ return
 Send, +#{Left}
 return
 
++#j::
+Send, +#{Down}
+return
+
++#k::
+Send, +#{Up}
+return
+
 !m::
 Send, #{Up}
 return
 
 !z::
 Send, #{Down}
-return
-
-!l::
-Send, #{Right}
-return
-
-!h::
-Send, #{Left}
 return
 
 +^!d::F
@@ -55,6 +54,10 @@ return
 Run, msedge.exe https://www.mongodb.com/docs/manual/reference/operator/query/
 return
 
++^!c::
+Run, msedge.exe https://en.cppreference.com/w/
+return
+
 <#t::
 Run wt
 return
@@ -62,10 +65,6 @@ return
 !Space::
 Send, {End}`
 return
-
-;^Space::
-;Send, {Home}
-;return
 
 !9::
 Send, ()
@@ -76,6 +75,11 @@ AltColonPressed:
 Send, ()
 Send, {Left 1}
 Return
+
+^]::
+Send, []
+Send, {Left 1}
+return
 
 !]::
 Send, []
@@ -115,6 +119,11 @@ Send, git commit -m ""
 Send, {Left 1}
 return
 
+!+f::
+Send, grep -H  ./*
+Send, {Left 4}
+return
+
 !+-::
 Send, —
 return
@@ -145,11 +154,22 @@ return
 
 ^PrintScreen::
 Run, D:\Install\Bandicam_4.6.4\Bandicam_Portable.exe
+return
+
+^;::
+Send, {End}
+SendRaw `;
+return
 
 !;::
 Send, {End}
 SendRaw `;
 return
+
+!+p::
+SendRaw, ` =>` {
+Send {Enter}
+Return
 
 ![::
 Send, {End}

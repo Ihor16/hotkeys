@@ -1,13 +1,15 @@
-﻿;! - Alt
+﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+;#Warn  ; Enable warnings to assist with detecting common errors.
+SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+
+;! - Alt
 ;^ - Ctrl
 ;+ - Shift
 
-#NoEnv  
-SendMode Input
-
-!d::
-Send, docker` `
-return
+;!d::
+;Send, docker` `
+;return
 
 !e::
 Send, exec -it` `
@@ -54,10 +56,14 @@ Send, docker service` `
 
 return
 
-!r::
-Send, deployment
-return
+;!r::
+;Send, deployment
+;return
 
 !k::
 Send, kubectl` `
+return
+
+!h::
+Send, helm` `
 return
