@@ -44,7 +44,7 @@ Send, docker volume` `
 return
 
 !n::
-Send, network` `
+Send, docker network` `
 return
 
 !i::
