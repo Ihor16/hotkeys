@@ -8,7 +8,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;+ - Shift
 
 ;!d::
-;Send, docker` `
+;Send, doctl` `
 ;return
 
 !e::
@@ -56,9 +56,9 @@ Send, docker service` `
 
 return
 
-;!r::
-;Send, deployment
-;return
+!r::
+Send, docker compose down && docker compose up -d
+return
 
 !k::
 Send, kubectl` `

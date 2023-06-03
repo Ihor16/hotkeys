@@ -66,6 +66,11 @@ return
 Send, {End}`
 return
 
+!\::
+Send, **
+Send, {Left 1}
+return
+
 !9::
 Send, ()
 Send, {Left 1}
@@ -159,6 +164,10 @@ return
 ^;::
 Send, {End}
 SendRaw `;
+return
+
+!l::
+SendRaw, ` := `
 return
 
 !;::
