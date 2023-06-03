@@ -31,7 +31,7 @@ Send, +#{Up}
 return
 
 !m::
-Send, #{Up}
+Send, nvm use $(cat .nvmrc) && npm run start
 return
 
 !z::
