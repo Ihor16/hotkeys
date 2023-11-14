@@ -166,9 +166,9 @@ Send, {End}
 SendRaw `;
 return
 
-!l::
-SendRaw, ` := `
-return
+;!l::
+;SendRaw, ` := `
+;return
 
 !;::
 Send, {End}

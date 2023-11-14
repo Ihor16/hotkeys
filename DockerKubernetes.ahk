@@ -67,3 +67,8 @@ return
 !h::
 Send, helm` `
 return
+
+!l::
+Send, kustomize` `
+return
+
